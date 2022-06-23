@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Checkbox from "@material-ui/core/Checkbox";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import * as S from "./style";
 
-const CheckBox = ({ isChecked, onChange, label, value }) => {
+const CheckBox = ({isChecked, onChange, label, value }) => {
+
+  const [status, setStatus] = useState(false)
+
+  useEffect(()=>{
+    onChange(status)
+  },[status])
+
   const handleChange = () => {
-    onChange && onChange(value);
+    setStatus(!status)
+
   };
+
   return (
     <S.CheckBox>
       <FormControlLabel
