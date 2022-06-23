@@ -1,7 +1,7 @@
 {
   "name": "ppl-finder",
   "version": "1.0.7",
-  "homepage": "https://gitname.github.io/react-gh-pages",
+  "homepage": "https://avivz1.github.io/PplFinder",
   "bin": "./bin/cli.js",
   "license": "MIT",
   "repository": "https://github.com/powerlink/PplFinder",
